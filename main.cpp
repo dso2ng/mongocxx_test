@@ -9,7 +9,7 @@
 int main()
 {
     mongocxx::instance inst{};
-    mongocxx::client conn{mongocxx::uri{"mongodb://192.168.11.10:32771"}};
+    mongocxx::client conn{mongocxx::uri{}};
 
     bsoncxx::builder::stream::document document{};
 
